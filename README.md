@@ -1,1 +1,1 @@
-# cssBayan
+https://${umkurius}.github.io/cssBayan/cssBayan/index.html
