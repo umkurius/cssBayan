@@ -26,7 +26,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.meme_title:active p {
+    opacity: .5;
+    color: blue !important;
+}
+.meme_title:active .meme_img img {
+    opacity: .5 !important;
+}
 p {
+    font-size: 0.9rem;
     margin: 2vh 0;
 }
 .meme_input {
@@ -42,7 +50,7 @@ p {
     transform: rotate(180deg);
 }
 .meme_icon {
-    width: 1.5rem;
+    width: 1rem;
     transform: rotate(45deg);
     transition: all .5s;
 }
@@ -73,7 +81,7 @@ p {
     }
 }
 
-@media(min-width:1920px) {
+@media(min-width:1440px) {
     .container {
         padding: 0 15vw;
     }
@@ -88,9 +96,12 @@ p {
     .meme_input:checked ~ p {
         color: black;
     }
+    .main_block:hover .meme_title{
+        cursor: pointer;
+    }
     .main_block:hover .meme_block .meme_title p {
         color: black;
-    }
+    } 
     .main_block:hover .meme_block .meme_title .meme_icon{
         opacity: 1;
     }
